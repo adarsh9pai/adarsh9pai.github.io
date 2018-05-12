@@ -43,6 +43,10 @@ mark{
     flex-flow: row wrap;
 }
 
+#box:hover{
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4), 0 7px 21px 0 rgba(0, 0, 0, 0.3);
+}
+
 .icon{
     margin-top:10px;
     width:150px;
