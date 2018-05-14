@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html{
+    width:100%;
+    height:100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+
+ul li{
+    word-wrap: break-word;
+}
+
+hr{
+    color:#505050;
+}
+#header{
+    width:100vw;
+    height:100vh;
+    background:url("bg.jpg")  no-repeat center center scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    margin-left:-15px;
+    
+}
+
+#headerTitle{
+
+    font-family: SanFranciscoBold;
+    font-size: 7.9em;
+    background: -webkit-linear-gradient(#fe8c00, #f83600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    margin-top:23vh;
+
+   
+}
+
+#contactTitle{
+    font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(#6a3093, #a044ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    margin-top:23vh;
+    font-size:4em;
+}
+
+#contact{
+    background-color: white;
+    width:100vw;
+    height:100vh;
+    margin-left:-15px;
+    display: inline-block;
+    
+}
+
+.col-md-6{
+    height:100vh;
+}
+
+#desc{
+    display:inline;
+    
+}
+
+
+#tileImageAbout{
+    background:url("profile.jpg")  no-repeat center center scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+@-webkit-keyframes bounce{
+    from{
+        margin-top:17vh;
+        filter: opacity(70%);
+    }
+    to{
+        margin-top:19vh;
+        filter: opacity(100%);
+    }
+}
+
+#headerScroll{
+    height:10vh;
+    margin-left:45vw;
+    margin-right:45vw;
+    margin-top:19vh;
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 0.46s;
+    -webkit-animation-iteration-count: 17;
+    -webkit-animation-direction: alternate;
+   
+}
+
+#scroller{
+    text-align:center;
+    font-family: SanFranciscoLight;
+    color:#fff;
+    font-weight: lighter;
+
+    
+}
+
+
+#about{
+    background-color: white;
+    width:100vw;
+    
+    margin-left:-15px;
+    font-family: 'Raleway', sans-serif;
+    font-size:1.5em;
+    display: inline-block;
+}
+
+#about_des{
+    margin-top:5vh;
+    margin-left:5px;
+}
+
+#work_h{
+    background-color: #222222;
+    width:100vw;
+    height:40vh;
+    margin-left:-15px;
+    margin-top:-20px;
+    color: white;
+    text-align:center;
+    display:table;
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#extra_h{
+    background-color: #222222;
+    width:100vw;
+    height:40vh;
+    margin-left:-15px;
+    margin-top:-20px;
+    color: white;
+    text-align:center;
+    display:table;
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+}
+
+#resume{
+    background-color: #222222;
+    width:100vw;
+    height:35vh;
+    margin-left:-15px;
+    margin-top:-20px;
+    color: white;
+    text-align:center;
+    display:table;
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#work{
+    width:100vw;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+#table{
+    margin-top:10vh;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-bottom:25vh;
+    
+}
+
+
+
+#briefcase-pos{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family:SanFranciscoBold;
+    src: url(SanFranciscoDisplay-Bold.otf);
+}
+@font-face {
+    font-family:SanFranciscoLight;
+    src: url(SanFranciscoDisplay-Light.otf);
+}
+
