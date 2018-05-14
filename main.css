@@ -13,6 +13,14 @@ html,body{
 h5{
     font-size:22px;
 }
+.email{
+    text-decoration: none; 
+    color:#2c3e509d;
+}
+.email:hover{
+    text-decoration: none;
+    color:#2c3e50;
+}
 a:hover{
     background-color:transparent !important;
 }
@@ -188,7 +196,7 @@ mark{
 }
 #res{
     color:#2c3e509d;
-    
+
 }
 #res:hover{
     color:#2c3e50;
