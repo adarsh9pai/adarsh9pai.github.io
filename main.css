@@ -62,6 +62,16 @@ mark{
    
 }
 
+.fa-snapchat-ghost {
+    text-shadow: -1px 0 #d3d3d3, 0 1px #d3d3d3, 1px 0 #d3d3d3, 0 -1px #d3d3d3;
+    color: white;  
+  }
+
+.fa-snapchat-ghost:hover{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;  
+  }
+
 #header{
     width:100vw;
     height:90vh;
@@ -157,7 +167,7 @@ mark{
 
 #contact{
     width:100vw;
-    height:90vh;
+    height:100vh;
     background-color:#e74c3c; 
 }
 #contactFooter{
@@ -167,6 +177,9 @@ mark{
     box-shadow: 0 5px 5px -5px #444;
     
 }
+
+
+
 
 #resume{
     width:100vw;
