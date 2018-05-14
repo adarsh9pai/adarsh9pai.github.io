@@ -186,6 +186,13 @@ mark{
     height:100vh;
     background-color:#f1c407; 
 }
+#res{
+    color:#2c3e509d;
+    
+}
+#res:hover{
+    color:#2c3e50;
+}
 #footer{
     width:100vw;
     height:20vh;
