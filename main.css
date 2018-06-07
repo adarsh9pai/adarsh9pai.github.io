@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
-html,body{
+body{
     background-color:white;
     width: 100vw;
     height:100vh;
     overflow-x: hidden;
+    overflow-y: scroll;
     margin-right:-15px;
     font-family: 'Source Sans Pro', sans-serif;
     color:white;
@@ -31,11 +32,11 @@ mark{
     .btn{
         margin-bottom:10px;
 }}
-  break{
+break{
     flex-basis: 100%;
     width: 0px; 
     height: 0px; 
-    overflow: hidden;
+    overflow-x: hidden;
   }
 #box{
     width:90%;
