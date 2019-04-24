@@ -1,7 +1,7 @@
 {
   "name": "adarsh9pai.github.io",
   "version": "0.1.0",
-  "homepage" : "https://adarsh9pai.github.io",
+  "homepage" : "https://adarsh9pai.github.io/src",
   "private": true,
   "dependencies": {
     "add": "^2.0.6",
