@@ -5,9 +5,12 @@ import { Layout, Popover, Tabs, Comment, Card, Icon, Avatar, Alert, Typography, 
 import { Document, Page, pdfjs, View } from 'react-pdf';
 import profile from './assets/image.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Links from './links'
+import Contact from './contact'
+let Markdown = require('react-markdown');
+
 const { Header, Content, Footer } = Layout;
 const { Meta } = Card;
-let Markdown = require('react-markdown');
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const { Title, Text } = Typography;
 const TabPane = Tabs.TabPane;
@@ -16,6 +19,12 @@ const TabPane = Tabs.TabPane;
 
 
 class App extends Component {
+    state = {
+        activeKey: "3"
+    };
+    changeTabKey = key => {
+        this.setState({ activeKey: key });
+    };
   
   render() {
     return (
@@ -27,7 +36,7 @@ class App extends Component {
         </Header>
         <Content style = {{textAlign : 'center', backgroundColor : '#1a1a1d'}}>
             <div style = {{minHeight : 'calc(100vh - 140px)'}}>
-            <Tabs defaultActiveKey="1" style = {{padding:'20px 20px', color : '#05386b'}}>
+            <Tabs activeKey={this.state.activeKey} onChange={this.changeTabKey} style = {{padding:'20px 20px', color : '#05386b'}}>
               <TabPane tab="About" key="1">
                 <Avatar size={120} src='https://media.licdn.com/dms/image/C4E03AQEkAJNMel4j6Q/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=a5uF7VhfIha7Ep7tZVrldUsMECNG60S_BciKsteIt9k'/>
                 <br />
@@ -40,14 +49,17 @@ class App extends Component {
                 </Text>
                 <br/>
                 <Text strong style = {{color: 'white'}}>
-                  While you're here, check out my <a href="#">work</a>, what I <a href="#work">like</a> or how to get in <a href="#">touch</a> with me.
+                  While you're here, check out my <a onClick = {() => this.changeTabKey("2")}>work</a>, what I <a onClick = {() => this.changeTabKey("4")}>like</a> or how to get in <a onClick = {() => this.changeTabKey("3")}>touch</a> with me.
                 </Text>
               </TabPane>
               <TabPane tab="Work" key="2">
+                  Currently Updating. If you need some information immediately, contact me.
               </TabPane>
               <TabPane tab="Contact" key="3" style={{ padding: '20px 100px' }}>
+                  <Contact />
               </TabPane>
               <TabPane tab="Links" key="4" style={{ padding: '20px 100px' }}>
+                  <Links />
               </TabPane>
             </Tabs>
             </div>
