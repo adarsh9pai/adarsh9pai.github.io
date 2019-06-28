@@ -21,7 +21,7 @@ const TabPane = Tabs.TabPane;
 
 class App extends Component {
     state = {
-        activeKey: "2"
+        activeKey: "1"
     };
     changeTabKey = key => {
         this.setState({ activeKey: key });
