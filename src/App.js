@@ -29,14 +29,14 @@ class App extends Component {
             <div style = {{minHeight : 'calc(100vh - 140px)'}}>
             <Tabs defaultActiveKey="1" style = {{padding:'20px 20px', color : '#05386b'}}>
               <TabPane tab="About" key="1">
-                <Avatar size={120} src='./assets/image.jpeg'/>
+                <Avatar size={120} src='https://media.licdn.com/dms/image/C4E03AQEkAJNMel4j6Q/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=a5uF7VhfIha7Ep7tZVrldUsMECNG60S_BciKsteIt9k'/>
                 <br />
                 <br />
                 <Title>Hi, I'm <strong style = {{color : '#ffff00'}}>Adarsh</strong></Title>
                 <Text strong style = {{color: 'white'}}>
-                I am a budding <a href = "#">Software Engineer</a> and rising junior majoring in <a href = "#">Computer Science</a> at the <a href = "#">University of Texas at Arlington</a>.<br/>
-                Before this, I spent 17 years of my life in different parts of <a href = "#">India</a>, predominantly in <a href = "#">Chennai</a> and <a href = "#" >Mumbai</a>.<br/>
-                I like <a href="#">learning</a> and <a href="#">building</a> things and you'll probably find me at a <a href="#">hackathon</a> on the weekends.<br/>
+                I am a budding <a href = "https://en.wikipedia.org/wiki/Software_engineer">Software Engineer</a> and rising junior majoring in <a href = "https://en.wikipedia.org/wiki/Computer_science">Computer Science</a> at the <a href = "https://www.uta.edu">University of Texas at Arlington</a>.<br/>
+                Before this, I spent 17 years of my life in different parts of <a href = "https://en.wikipedia.org/wiki/India">India</a>, predominantly in <a href = "https://en.wikipedia.org/wiki/Chennai">Chennai</a> and <a href = "https://en.wikipedia.org/wiki/Mumbai" >Mumbai</a>.<br/>
+                I like <a href="https://en.wikipedia.org/wiki/Learning">learning</a> and <a href="https://en.wikipedia.org/wiki/Building">building</a> things and you'll probably find me at a <a href="https://www.mlh.io">hackathon</a> on the weekends.<br/>
                 </Text>
                 <br/>
                 <Text strong style = {{color: 'white'}}>
