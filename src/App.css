@@ -71,3 +71,7 @@ h1.ant-typography{
 .ant-tag, .ant-tag a, .ant-tag a:hover {
   color: black;
 }
+
+.anticon {
+  color : deeppink;
+}
