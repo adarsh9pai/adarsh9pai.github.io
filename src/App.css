@@ -35,20 +35,20 @@
 }
 
 .ant-tabs-nav .ant-tabs-tab-active {
-  color: #ffff00;
+  color: #eb2f96;
   font-weight: 500;
 }
 .ant-tabs-nav .ant-tabs-tab {
-  color: #ffff00;
+  color: #eb2f96;
   font-weight: 500;
 }
 
 .ant-tabs-nav .ant-tabs-tab:hover{
-  color : #ffff00;
+  color : #eb2f96;
 }
 
 .ant-tabs-ink-bar {
-  background-color: #ffff00;
+  background-color: #eb2f96;
 
 }
 
@@ -65,7 +65,7 @@ h1.ant-typography{
 }
 
 .ant-typography a {
-  color: #ffff00;
+  color: #b37feb;
 }
 
 .ant-tag, .ant-tag a, .ant-tag a:hover {
