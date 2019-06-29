@@ -38,10 +38,8 @@ class App extends Component {
     console.log(this.state.gitHubInfo);
     return (
       <Layout className='layout'>
-        <Header style = {{backgroundColor : '#1a1a1d'}}>
-        </Header>
         <Content style = {{textAlign : 'center', backgroundColor : '#1a1a1d'}}>
-            <div style = {{minHeight : 'calc(100vh - 140px)'}}>
+            <div style = {{minHeight : 'calc(100vh - 70px)'}}>
             <Tabs activeKey={this.state.activeKey} onChange={this.changeTabKey} style = {{padding:'20px 20px', color : '#05386b'}}>
               <TabPane tab="About" key="1">
                 <Avatar size={120} src='https://media.licdn.com/dms/image/C4E03AQEkAJNMel4j6Q/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=a5uF7VhfIha7Ep7tZVrldUsMECNG60S_BciKsteIt9k'/>
