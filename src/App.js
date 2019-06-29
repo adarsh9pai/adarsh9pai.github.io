@@ -66,7 +66,7 @@ class App extends Component {
           <Row>
           <Col span = {4}> <h4 style = {{color : 'gray'}}>© 2019</h4></Col>    
           <Col span = {14}></Col>
-          <Col span = {6} style = {{textAlign : 'right'}}> <h4 style = {{color : 'gray'}}>Arlington TX</h4></Col>    
+          <Col span = {6} style = {{textAlign : 'right'}}> <h4 style = {{color : 'gray'}}>Arlington, TX</h4></Col>    
           </Row>
         </Footer>
       </Layout>
