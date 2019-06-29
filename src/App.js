@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Layout, Popover, Tabs, Comment, Card, Icon, Avatar, Alert, Typography, Tag, List } from 'antd';
+import { Layout, Popover, Tabs, Comment, Card, Icon, Avatar, Alert, Typography, Tag, List, Row, Col} from 'antd';
 import { Document, Page, pdfjs, View } from 'react-pdf';
 import profile from './assets/image.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,9 +31,6 @@ class App extends Component {
     return (
       <Layout className='layout'>
         <Header style = {{backgroundColor : '#1a1a1d'}}>
-          <h3 style={{ color: 'white' }}>
-            <Icon type = "environment" style = {{color:'gray'}} /> DFW // BOM 
-          </h3>
         </Header>
         <Content style = {{textAlign : 'center', backgroundColor : '#1a1a1d'}}>
             <div style = {{minHeight : 'calc(100vh - 140px)'}}>
@@ -65,8 +62,12 @@ class App extends Component {
             </Tabs>
             </div>
         </Content>
-        <Footer style={{ textAlign: 'center',backgroundColor : '#1a1a1d'}}>
-          <h4 style = {{color : 'white'}}>Adarsh Yogesh Pai ©2019</h4>
+        <Footer style={{ backgroundColor : '#1a1a1d'}}>
+          <Row>
+          <Col span = {4}> <h4 style = {{color : 'gray'}}>© 2019</h4></Col>    
+          <Col span = {14}></Col>
+          <Col span = {6} style = {{textAlign : 'right'}}> <h4 style = {{color : 'gray'}}>Arlington TX</h4></Col>    
+          </Row>
         </Footer>
       </Layout>
     )

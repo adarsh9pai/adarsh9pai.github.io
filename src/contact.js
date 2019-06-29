@@ -48,7 +48,7 @@ const Contact = () =>{
         {links}
         <br/>
         <strong style = {{color : 'white'}}>or email me at <a href = "mailto:adarsh9pai@gmail.com" style = {{color : "#0079ff"}}>adarsh9pai@gmail.com</a></strong><br/><br/> 
-        <strong style = {{color : 'white',fontWeight:'800', fontStyle : 'italic'}}>PGP Public Key</strong><br/><br/>
+        <strong style = {{color : 'white',fontWeight:'800'}}>PGP Public Key</strong><br/><br/>
         <pre><mark style = {{color : 'white',backgroundColor : '#232323'}}>{pgp}</mark></pre>
         </div>
     )
