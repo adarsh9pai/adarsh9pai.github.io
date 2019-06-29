@@ -6,5 +6,6 @@
         {"name":"instagram","link" : "https://www.instagram.com/adarsh9pai", "title":"Instagram","desc":"", "icon":"faInstagram"},
         {"name":"y-combinator","link": "https://news.ycombinator.com/user?id=adarsh9pai", "title":"Hacker News","desc":"", "icon":"faYCombinator"},
         {"name":"keybase","link": "https://keybase.io/adarsh9pai", "title":"Keybase","desc":"", "icon":"faKeybase"}
-    ]
+    ],
+    "resume": "https://drive.google.com/file/d/1MMlz_rQMEK6OMmqIfrTptexWZCvsQ83l/view?usp=sharing"
 }
