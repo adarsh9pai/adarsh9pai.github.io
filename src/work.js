@@ -1,12 +1,41 @@
-import {Typography, Card} from 'antd';
+import {Typography, Icon,Row, Col, List} from 'antd';
 import React, { Component } from 'react';
+import './App.css';
 const {Title, Text} = Typography;
 
-const Work = () =>{
+
+const Work = props =>{
+    const repos = [];
+    for(let i = 0; i < props.data.length; ++i){
+        if(props.data[i].description != null){
+            repos.push(props.data[i]);
+        }
+    }
+    console.log(repos.length);
     return(
+    <div>
+    <Row>
+    <Col span = {6}></Col>
+    <Col span = {12}>
+    <h3 style = {{color : '#eb2f96',fontWeight:'800'}}>Project Repositories</h3>
+    <List
+      dataSource={repos}
+      renderItem={item => 
         <div>
-           <Text style = {{color:'white'}}>Currently updating this section as of June 28 2019. Meanwhile, download my resume </Text> <a href = "https://drive.google.com/file/d/1ixCbq8TRBpl6z3iS6sMsQhOL8vJAkmZx/view?usp=sharing" style = {{color: '#0079ff'}}>here.</a>
-  </div>
+        <br/>
+        <h3 style = {{color : 'white'}}>{item.name}</h3>
+        <Text>{item.description}</Text><br/><br/>
+        <a href = {"https://github.com/adarsh9pai/" + item.name} style = {{color : "#b37feb"}}>Visit <Icon type="github" style = {{color : "#b37feb"}}/> Repo</a>
+        <br/><br/>
+        </div>
+    
+    }
+    />
+    </Col>
+    <Col span = {6}></Col>
+    </Row>
+    </div>
+
     )
 }
 

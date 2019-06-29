@@ -3,6 +3,7 @@ import { Layout, Popover, Tabs, Comment, Card, Icon, Avatar, Alert, Typography, 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook,faGithub,faTwitter,faInstagram,faLinkedin,faKeybase,faYCombinator,faGoogle} from '@fortawesome/free-brands-svg-icons';
 import Item from 'antd/lib/list/Item';
+import './App.css';
 const {Text, Title} = Typography;
 
 const social = [
@@ -47,8 +48,8 @@ const Contact = () =>{
         <strong style = {{color : 'white'}}>You can find me online on</strong><br/><br/> 
         {links}
         <br/>
-        <strong style = {{color : 'white'}}>or email me at <a href = "mailto:adarsh9pai@gmail.com" style = {{color : "#0079ff"}}>adarsh9pai@gmail.com</a></strong><br/><br/> 
-        <strong style = {{color : 'white',fontWeight:'800'}}>PGP Public Key</strong><br/><br/>
+        <strong style = {{color : 'white'}}>or email me at <a href = "mailto:adarsh9pai@gmail.com" style = {{color : "#b37feb"}}>adarsh9pai@gmail.com</a></strong><br/><br/><br/>
+        <h3 style = {{color : '#eb2f96',fontWeight:'800'}}>PGP Public Key</h3>
         <pre><mark style = {{color : 'white',backgroundColor : '#232323'}}>{pgp}</mark></pre>
         </div>
     )

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Layout, Popover, Tabs, Comment, Card, Icon, Avatar, Alert, Typography, Tag, List, Row, Col} from 'antd';
-import { Document, Page, pdfjs, View } from 'react-pdf';
 import profile from './assets/image.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Links from './links';
@@ -12,7 +11,6 @@ let Markdown = require('react-markdown');
 
 const { Header, Content, Footer } = Layout;
 const { Meta } = Card;
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const { Title, Text } = Typography;
 const TabPane = Tabs.TabPane;
 
@@ -21,13 +19,23 @@ const TabPane = Tabs.TabPane;
 
 class App extends Component {
     state = {
-        activeKey: "1"
+        activeKey: "1",
+        gitHubInfo : {}
     };
     changeTabKey = key => {
         this.setState({ activeKey: key });
     };
+
+    async componentDidMount() {
+        const response = await fetch(`https://api.github.com/users/adarsh9pai/repos?sort=updated`);
+        const json = await response.json();
+        this.setState({ gitHubInfo: json });
+      }
+
+
   
   render() {
+    console.log(this.state.gitHubInfo);
     return (
       <Layout className='layout'>
         <Header style = {{backgroundColor : '#1a1a1d'}}>
@@ -51,7 +59,7 @@ class App extends Component {
                 </Text>
               </TabPane>
               <TabPane tab="Work" key="2">
-                  <Work />
+                  <Work data = {this.state.gitHubInfo}/>
               </TabPane>
               <TabPane tab="Contact" key="3" style={{ padding: '20px 100px' }}>
                   <Contact />
@@ -64,9 +72,8 @@ class App extends Component {
         </Content>
         <Footer style={{ backgroundColor : '#1a1a1d'}}>
           <Row>
-          <Col span = {4}> <h4 style = {{color : 'gray'}}>© 2019</h4></Col>    
-          <Col span = {14}></Col>
-          <Col span = {6} style = {{textAlign : 'right'}}> <h4 style = {{color : 'gray'}}>Arlington, TX</h4></Col>    
+          <Col span = {12}> <h4 style = {{color : 'gray'}}>© 2019</h4></Col>    
+          <Col span = {12} style = {{textAlign : 'right'}}> <h4 style = {{color : 'gray'}}>Arlington, TX</h4></Col>    
           </Row>
         </Footer>
       </Layout>

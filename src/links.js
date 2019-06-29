@@ -1,5 +1,6 @@
 import {Typography} from 'antd';
 import React, { Component } from 'react';
+import './App.css';
 const {Title, Text} = Typography;
 
 const Links = () =>{

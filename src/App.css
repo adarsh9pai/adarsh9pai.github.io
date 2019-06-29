@@ -75,3 +75,11 @@ h1.ant-typography{
 .anticon {
   color : deeppink;
 }
+
+.ant-list-item-meta-description {
+  color: white;
+}
+
+.ant-typography {
+  color: white;
+}
