@@ -1,7 +1,7 @@
 import {Typography, Icon,Row, Col, List, Button, Avatar} from 'antd';
 import React, { Component } from 'react';
 import './App.css';
-import UTASeal from './assets/uta.png';
+import UTASeal from './assets/uta.jpg';
 import Emerson from './assets/emerson.jpg';
 import UTADSS from './assets/utadss.jpg';
 
