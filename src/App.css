@@ -1,7 +1,11 @@
 @import '~antd/dist/antd.css';
 
+html {
+  background-color: #141414;
+}
+
 :root {
-  --bg-color: linear-gradient(90deg, #0052D4 0%, #4364F7 100%);;
+  --bg-color: linear-gradient(90deg, #141414 0%,#141414 100%);;
 }
 
 .ant-typography {
@@ -10,6 +14,7 @@
 
 .ant-layout {
   min-height: 100vh;
+  width: 100vw;
 }
 
 .IntroductionText {
@@ -47,16 +52,20 @@
 .ant-layout-header {
   background: var(--bg-color);;
   color : white;
+  height: 5vh;
+  width: 100vw;
 }
 
 .ant-layout-content {
   background: var(--bg-color);;
   color : white;
   text-align : 'middle';
+  width: 100vw;
 }
 
 .ant-layout-footer {
   text-align : 'middle';
   background: var(--bg-color);;
   color : white;
+  width: 100vw;
 }
