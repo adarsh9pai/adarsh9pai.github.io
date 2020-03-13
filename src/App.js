@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import QueueAnim from 'rc-queue-anim'
 import { Layout, Typography} from 'antd';
-import { InstagramOutlined, LinkedinOutlined, MailOutlined, FilePdfOutlined, GithubOutlined, CodeOutlined, TwitterOutlined} from '@ant-design/icons';
+import { InstagramFilled, LinkedinFilled, MailFilled, FilePdfOutlined, GithubOutlined, CodeFilled, TwitterOutlined, FilePdfFilled} from '@ant-design/icons';
 import Pdf from './assets/resume.pdf';
 const { Text } = Typography;
 const { Header, Content, Footer } = Layout;
@@ -27,18 +27,18 @@ class App extends Component {
               <Text className = "IntroductionText">Love Math, Problem Solving and Algorithms? Check out <mark><a href = "https://www.blazeoj.com/">BlazeJudge</a></mark>.<br/><br/></Text>
             </div>
             <div key = {2}>
-              <a href = "https://www.instagram.com/adarsh9pai" className = "social"><InstagramOutlined /></a>
+              <a href = "https://www.instagram.com/adarsh9pai" className = "social"><InstagramFilled /></a>
               <a href = "https://www.twitter.com/adarsh9pai" className = "social"><TwitterOutlined /></a>
               <a href = "https://www.github.com/adarsh9pai" className = "social"><GithubOutlined /></a>
-              <a href = "https://www.devpost.com/adarsh9pai" className = "social"><CodeOutlined /></a>
-              <a href = "https://www.linkedin.com/in/adarsh9pai" className = "social"><LinkedinOutlined /></a>
-              <a href = "mailto://adarsh9pai@gmail.com/" className = "social"><MailOutlined /></a>
-              <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className = "social"><FilePdfOutlined /></a>
+              <a href = "https://www.devpost.com/adarsh9pai" className = "social"><CodeFilled /></a>
+              <a href = "https://www.linkedin.com/in/adarsh9pai" className = "social"><LinkedinFilled /></a>
+              <a href = "mailto://adarsh9pai@gmail.com/" className = "social"><MailFilled /></a>
+              <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className = "social"><FilePdfFilled /></a>
             </div>
           </QueueAnim>
         </Content>
         <Footer style = {{textAlign : 'center'}}>
-          <Text>© 2020 📍Arlington, TX </Text>
+          <Text>© 2020</Text>
         </Footer>
       </Layout>
     )
