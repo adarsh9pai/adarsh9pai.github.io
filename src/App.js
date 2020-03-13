@@ -1,78 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Layout, Popover, Tabs, Comment, Card, Icon, Avatar, Alert, Typography, Tag, List, Row, Col} from 'antd';
-import profile from './assets/image.jpeg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Links from './links';
-import Contact from './contact';
-import Work from './work';
-let Markdown = require('react-markdown');
-
+import QueueAnim from 'rc-queue-anim'
+import { Layout, Typography} from 'antd';
+import { InstagramOutlined, LinkedinOutlined, MailOutlined, FilePdfOutlined, GithubOutlined, CodeOutlined, TwitterOutlined} from '@ant-design/icons';
+import Pdf from './assets/resume.pdf';
+const { Text } = Typography;
 const { Header, Content, Footer } = Layout;
-const { Meta } = Card;
-const { Title, Text } = Typography;
-const TabPane = Tabs.TabPane;
 
 
 
 
 class App extends Component {
-    state = {
-        activeKey: "1",
-        gitHubInfo : {}
-    };
-    changeTabKey = key => {
-        this.setState({ activeKey: key });
-    };
-
-    async componentDidMount() {
-        const response = await fetch(`https://api.github.com/users/adarsh9pai/repos?sort=updated`);
-        const json = await response.json();
-        this.setState({ gitHubInfo: json });
-      }
-
-
   
   render() {
-    console.log(this.state.gitHubInfo);
     return (
-      <Layout className='layout'>
-        <Content style = {{textAlign : 'center', backgroundColor : '#1a1a1d'}}>
-            <div style = {{minHeight : 'calc(100vh - 70px)'}}>
-            <Tabs activeKey={this.state.activeKey} onChange={this.changeTabKey} style = {{padding:'20px 20px', color : '#05386b'}}>
-              <TabPane tab="About" key="1">
-                <Avatar size={120} src='https://media.licdn.com/dms/image/C4E03AQEkAJNMel4j6Q/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=a5uF7VhfIha7Ep7tZVrldUsMECNG60S_BciKsteIt9k'/>
-                <br />
-                <br />
-                <Title>Hi, I'm Adarsh</Title>
-                <Text strong style = {{color: 'white'}}>
-                I am a budding <a href = "https://en.wikipedia.org/wiki/Software_engineer">Software Engineer</a> and rising junior majoring in <a href = "https://en.wikipedia.org/wiki/Computer_science">Computer Science</a> at the <a href = "https://www.uta.edu">University of Texas at Arlington</a>.<br/>
-                Before this, I spent 17 years of my life in different parts of <a href = "https://en.wikipedia.org/wiki/India">India</a>, predominantly in <a href = "https://en.wikipedia.org/wiki/Chennai">Chennai</a> and <a href = "https://en.wikipedia.org/wiki/Mumbai" >Mumbai</a>.<br/>
-                I like <a href="https://en.wikipedia.org/wiki/Learning">learning</a> and <a href="https://en.wikipedia.org/wiki/Building">building</a> things and you'll probably find me at a <a href="https://www.mlh.io">hackathon</a> on the weekends.<br/>
-                </Text>
-                <br/>
-                <Text strong style = {{color: 'white'}}>
-                  While you're here, check out my <a onClick = {() => this.changeTabKey("2")}>work</a>, what I <a onClick = {() => this.changeTabKey("4")}>like</a> or how to get in <a onClick = {() => this.changeTabKey("3")}>touch</a> with me.
-                </Text>
-              </TabPane>
-              <TabPane tab="Work" key="2">
-                  <Work data = {this.state.gitHubInfo}/>
-              </TabPane>
-              <TabPane tab="Contact" key="3" style={{ padding: '20px 100px' }}>
-                  <Contact />
-              </TabPane>
-              <TabPane tab="Links" key="4" style={{ padding: '20px 100px' }}>
-                  <Links />
-              </TabPane>
-            </Tabs>
+      <Layout>
+        <Header></Header>
+        <Content>
+          <QueueAnim delay={500} type='left' ease = 'easeInOutQuart'>
+            <div key = {1}>
+              <Text className = "IntroductionText">I'm <mark><a href = "#">Adarsh Pai</a></mark>.<br/><br/></Text>
+              <Text className = "IntroductionText">I will be spending this summer working on fascinating problems at <mark><a href = "https://www.citrix.com/">Citrix</a></mark>. Previously worked at <mark><a href = "https://www.emerson.com/">Emerson</a></mark>.<br/><br/></Text>
+              <Text className = "IntroductionText">Majoring in Computer Science with Honors at the <mark><a href = "https://www.uta.edu/">University of Texas at Arlington</a></mark>, Class of 2021.<br/><br/></Text>
+              <Text className = "IntroductionText">Won a Nintendo Switch at a <mark><a href = "https://www.theshorthorn.com/news/for-uta-student-hackathon-team-winning-is-in-the-code/article_133c3eb8-6de8-11e9-a1f8-1bf4fa4b99df.html">hackathon</a></mark> once.<br/><br/></Text>
+              <Text className = "IntroductionText">Raised in Mumbai, India.<br/><br/></Text>
+              <Text className = "IntroductionText">Love Math, Problem Solving and Algorithms? Check out <mark><a href = "https://www.blazeoj.com/">BlazeJudge</a></mark>.<br/><br/></Text>
             </div>
+            <div key = {2}>
+              <a href = "https://www.instagram.com/adarsh9pai" className = "social"><InstagramOutlined /></a>
+              <a href = "https://www.twitter.com/adarsh9pai" className = "social"><TwitterOutlined /></a>
+              <a href = "https://www.github.com/adarsh9pai" className = "social"><GithubOutlined /></a>
+              <a href = "https://www.devpost.com/adarsh9pai" className = "social"><CodeOutlined /></a>
+              <a href = "https://www.linkedin.com/in/adarsh9pai" className = "social"><LinkedinOutlined /></a>
+              <a href = "mailto://adarsh9pai@gmail.com/" className = "social"><MailOutlined /></a>
+              <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className = "social"><FilePdfOutlined /></a>
+            </div>
+          </QueueAnim>
         </Content>
-        <Footer style={{ backgroundColor : '#1a1a1d'}}>
-          <Row>
-          <Col span = {12}> <h4 style = {{color : 'gray'}}>© 2019</h4></Col>    
-          <Col span = {12} style = {{textAlign : 'right'}}> <h4 style = {{color : 'gray'}}>Arlington, TX</h4></Col>    
-          </Row>
+        <Footer style = {{textAlign : 'center'}}>
+          <Text>© 2020 📍Arlington, TX </Text>
         </Footer>
       </Layout>
     )

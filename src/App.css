@@ -1,85 +1,62 @@
 @import '~antd/dist/antd.css';
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.ant-tabs-nav .ant-tabs-tab-active {
-  color: #eb2f96;
-  font-weight: 500;
-}
-.ant-tabs-nav .ant-tabs-tab {
-  color: #eb2f96;
-  font-weight: 500;
-}
-
-.ant-tabs-nav .ant-tabs-tab:hover{
-  color : #eb2f96;
-}
-
-.ant-tabs-ink-bar {
-  background-color: #eb2f96;
-
-}
-
-.ant-tabs-top-bar {
-  background-color : #1a1a1d;
-}
-
-.ant-tabs-bar {
-  border-bottom : 0;
-}
-
-h1.ant-typography{
-  color : white;
-}
-
-.ant-typography a {
-  color: #b37feb;
-}
-
-.ant-tag, .ant-tag a, .ant-tag a:hover {
-  color: black;
-}
-
-.anticon {
-  color : deeppink;
-}
-
-.ant-list-item-meta-description {
-  color: white;
+:root {
+  --bg-color: linear-gradient(90deg, #0052D4 0%, #4364F7 100%);;
 }
 
 .ant-typography {
   color: white;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.IntroductionText {
+  font-size: 3vh;
+  font-weight: 400;
+  margin: 2vh 1vw;
+  box-decoration-break: clone;
+}
+
+.ant-typography a {
+  color : white;
+  text-decoration: none;
+}
+
+.ant-typography a:hover {
+  color : white;
+  text-decoration: none;
+}
+
+.ant-typography mark {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.social {
+  color: white;
+  font-size: 2.5vh;
+  margin: 2vh 1vw;
+}
+
+.social:hover{
+  color: white;
+}
+
+.ant-layout-header {
+  background: var(--bg-color);;
+  color : white;
+}
+
+.ant-layout-content {
+  background: var(--bg-color);;
+  color : white;
+  text-align : 'middle';
+}
+
+.ant-layout-footer {
+  text-align : 'middle';
+  background: var(--bg-color);;
+  color : white;
 }
