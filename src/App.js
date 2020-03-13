@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import QueueAnim from 'rc-queue-anim'
 import { Layout, Typography} from 'antd';
-import { InstagramFilled, LinkedinFilled, MailFilled, FilePdfOutlined, GithubOutlined, CodeFilled, TwitterOutlined, FilePdfFilled} from '@ant-design/icons';
+import { InstagramOutlined, LinkedinFilled, MailFilled, FilePdfOutlined, GithubOutlined, CodeFilled, TwitterOutlined, FilePdfFilled} from '@ant-design/icons';
 import Pdf from './assets/resume.pdf';
 const { Text } = Typography;
 const { Header, Content, Footer } = Layout;
@@ -27,7 +27,7 @@ class App extends Component {
               <Text className = "IntroductionText">Love Math, Problem Solving and Algorithms? Check out <mark><a href = "https://www.blazeoj.com/">BlazeJudge</a></mark>.<br/><br/></Text>
             </div>
             <div key = {2}>
-              <a href = "https://www.instagram.com/adarsh9pai" className = "social"><InstagramFilled /></a>
+              <a href = "https://www.instagram.com/adarsh9pai" className = "social"><InstagramOutlined /></a>
               <a href = "https://www.twitter.com/adarsh9pai" className = "social"><TwitterOutlined /></a>
               <a href = "https://www.github.com/adarsh9pai" className = "social"><GithubOutlined /></a>
               <a href = "https://www.devpost.com/adarsh9pai" className = "social"><CodeFilled /></a>
