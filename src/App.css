@@ -37,6 +37,8 @@ html {
 .ant-typography mark {
   color: white;
   background-color: rgba(255, 255, 255, 0.10);
+  border-bottom: 2px dotted #fff;
+  text-decoration-style: dotted;
 }
 
 .social {
