@@ -1,11 +1,11 @@
 @import '~antd/dist/antd.css';
 
 html {
-  background-color: #141414;
+  background-color: black;
 }
 
 :root {
-  --bg-color: linear-gradient(90deg, #141414 0%,#141414 100%);;
+  --bg-color: black;
 }
 
 .ant-typography {
@@ -30,15 +30,13 @@ html {
 }
 
 .ant-typography a:hover {
-  color : white;
+  color : #ffffff;
   text-decoration: none;
 }
 
 .ant-typography mark {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.10);
-  border-bottom: 2px dotted #fff;
-  text-decoration-style: dotted;
+  background-color: rgba(255, 255, 255, 0.0);
+  border-bottom: 2px solid #f58025;
 }
 
 .social {
@@ -48,7 +46,7 @@ html {
 }
 
 .social:hover{
-  color: white;
+  color: #ffffff;
 }
 
 .ant-layout-header {
